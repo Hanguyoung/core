@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<v2gci_t:SalesTariff xmlns:v2gci_h="urn:iso:15118:2:2013:MsgHeader"
+ xmlns:v2gci_b="urn:iso:15118:2:2013:MsgBody"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:v2gci_t="urn:iso:15118:2:2013:MsgDataTypes"
+ xmlns:v2gci_d="urn:iso:15118:2:2013:MsgDef"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<v2gci_t:SalesTariffID>67</v2gci_t:SalesTariffID>
+    <v2gci_t:SalesTariffDescription>SalesTariffDescription1</v2gci_t:SalesTariffDescription>
+    <v2gci_t:NumEPriceLevels>3</v2gci_t:NumEPriceLevels>
+    <v2gci_t:SalesTariffEntry>
+        <v2gci_t:RelativeTimeInterval>
+            <v2gci_t:start>0</v2gci_t:start>
+        </v2gci_t:RelativeTimeInterval>
+        <v2gci_t:EPriceLevel>1</v2gci_t:EPriceLevel>
+    </v2gci_t:SalesTariffEntry>
+<v2gci_t:SalesTariffEntry>
+<v2gci_t:RelativeTimeInterval>
+<v2gci_t:start>2147</v2gci_t:start>
+</v2gci_t:RelativeTimeInterval>
+<v2gci_t:EPriceLevel>2</v2gci_t:EPriceLevel>
+</v2gci_t:SalesTariffEntry>
+<v2gci_t:SalesTariffEntry>
+<v2gci_t:RelativeTimeInterval>
+<v2gci_t:start>9874</v2gci_t:start>
+</v2gci_t:RelativeTimeInterval>
+<v2gci_t:EPriceLevel>3</v2gci_t:EPriceLevel>
+</v2gci_t:SalesTariffEntry>
+<v2gci_t:SalesTariffEntry>
+<v2gci_t:RelativeTimeInterval>
+<v2gci_t:start>14937</v2gci_t:start>
+</v2gci_t:RelativeTimeInterval>
+<v2gci_t:EPriceLevel>2</v2gci_t:EPriceLevel>
+</v2gci_t:SalesTariffEntry>
+<v2gci_t:SalesTariffEntry>
+<v2gci_t:RelativeTimeInterval>
+<v2gci_t:start>24431</v2gci_t:start>
+<v2gci_t:duration>30000</v2gci_t:duration>
+</v2gci_t:RelativeTimeInterval>
+<v2gci_t:EPriceLevel>1</v2gci_t:EPriceLevel>
+</v2gci_t:SalesTariffEntry>
+</v2gci_t:SalesTariff>

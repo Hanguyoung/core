@@ -1,0 +1,132 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Nagasena.Proc.Common</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Nagasena.Proc.Common Namespace</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="Nagasena.Proc.CommonHierarchy.html">Namespace hierarchy</a>
+      </p>
+      <h3 class="dtH3">Classes</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Class</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.BinaryDataSource.html">BinaryDataSource</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.EventDescription_Fields.html">EventDescription_Fields</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.EventType.html">EventType</a>
+            </td>
+            <td width="50%"> EventType denotes terminal symbols of grammar productions defined in the EXI 1.0 specification. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.EXIOptions.html">EXIOptions</a>
+            </td>
+            <td width="50%"> EXIOptions provides accessors for values associated with EXI options in the EXI header of an EXI stream. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.GrammarOptions.html">GrammarOptions</a>
+            </td>
+            <td width="50%"> GrammarOptions computes a short integer that represents settings in the EXI Grammar settings that determine how an EXI file will be encoded or decoded. <br /><br /> Values are set using binary switch values (represented as short integers). <br /><br /> If no options have been set, the value is 0 (this is an temporary internal value, rather than a valid setting). <br /><br /> If an XSD is available, and the file to be processed is 100% compatible with the XSD, choosing STRICT_OPTIONS (1) provides the best performance. No other options can be set when files are encoded or decoded in strict mode. <br /><br /> The DEFAULT_OPTIONS setting is 2. The following table lists all of the options and their values. <br /><br />
+            <table align="center" border="1" cellpadding="3" width="640"><tr>
+            <th>Constant</th><th>Value</th>
+            </tr><tr>
+            <td>STRICT_OPTIONS</td><td>1</td>
+            </tr><tr>
+            <td>DEFAULT_OPTIONS</td><td>2</td>
+            </tr><tr><td> ADD_NS</td><td>4 </td></tr><tr><td> ADD_SC</td><td>N/A* </td></tr><tr><td> ADD_DTD</td><td>16 </td></tr><tr><td> ADD_CM</td><td>32 </td></tr><tr><td> ADD_PI</td><td>64 </td></tr>
+            <tr><td colspan="2">*The self-contained option is not supported in this release. </td></tr>
+            </table>
+            <br /><br /> The value of DEFAULT_OPTIONS is 2. When you pass the options variable to an add[??] method, the binary switch value is added to the current value of the options variable. The sum of all additional switches becomes a concise list of the selected options. <br /><br /> For example, if you preserve comments and processing instructions, the total is 98 (2 + 32 + 64). The bitwise options are set correctly, because there is one and only one combination of options that sums up to 98. <br /><br /> If your application uses the same options every time, you can hard code the numeric value as a short integer and use it to create your GrammarCache. For example: <pre> GrammarCache gc = new GrammarCache((EXISchema)null,98); </pre> Be careful to use the correct numeric value, to avoid unexpected results. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.QName.html">QName</a>
+            </td>
+            <td width="50%"> QName is a pair comprised of a namespace name and a local name to be used in a Datatype Representation Map (DTRM) definition to denote an XSD datatype or an EXI datatype representation. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.SchemaId.html">SchemaId</a>
+            </td>
+            <td width="50%"> SchemaId represents the <a href="http://www.w3.org/TR/exi/#key-schemaIdOption">schemaId</a> property of an EXI stream. </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Interfaces</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Interface</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.EventDescription.html">EventDescription</a>
+            </td>
+            <td width="50%">
+            <p>EventDescription provides accessors to the current EXI event data during the decode process.</p>
+            
+            <p>Note that the content of EventDescription is transient, which means its content may change when the decoder is asked for access to the next EXI event data.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Enumerations</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Enumeration</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nagasena.Proc.Common.AlignmentType.html">AlignmentType</a>
+            </td>
+            <td width="50%"> AlignmentType represents one of the following bit alignment styles so as to provide an extra degree of control over the way information is stored in EXI format. <br />
+            <ul><li><i>bitPacked</i> is the default setting. Data are stored in the fewest number of bits in sequential streams that cross byte barriers. Conceptually, 8 boolean values might be stored in a single byte, for example.</li><br />
+            <li><i>byteAligned</i> stores data using EXI tags with byte barriers intact. Byte-aligned files are useful for troubleshooting, because the data are often human-readable when the values are literally encoded as strings. It is not meant for data transfer, as the file has not been optimized.</li><br />
+            <li><i>preCompress</i> is a byte-aligned format that arranges the data into channels. It is intended for use cases where file compression is part of the transfer process, so as not to perform the compression step twice.</li><br />
+            <li><i>compress</i> is not a bit alignment in and of itself, but the Deflate algorithm requires that files be byte-aligned. When compression is selected, byte-alignment is used, the data are arranged in channels, and the file is compressed at the end of processing.</li>
+            </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

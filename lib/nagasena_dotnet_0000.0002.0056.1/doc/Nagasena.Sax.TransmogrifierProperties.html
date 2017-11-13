@@ -1,0 +1,57 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Transmogrifier Properties</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Transmogrifier Properties</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The properties of the <b>Transmogrifier</b> class are listed below. For a complete list of <b>Transmogrifier</b> class members, see the <a href="Nagasena.Sax.TransmogrifierMembers.html">Transmogrifier Members</a> topic.</p>
+      <h4 class="dtH4">Public Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.AlignmentType.html">AlignmentType</a></td><td width="50%"> Set the bit alignment style for the encoded EXI stream. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.BlockSize.html">BlockSize</a></td><td width="50%"> Set the size, in number of values, of the information that will be processed as a chunk of the entire XML stream. Reducing the block size can improve performance for devices with limited dynamic memory. Default is 1,000,000 items (not 1MB, but 1,000,000 complete Attribute and Element values). Block size is only used when the EXI stream is encoded with EXI-compression. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.DeflateLevel.html">DeflateLevel</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.DeflateStrategy.html">DeflateStrategy</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.DivertBuiltinGrammarToAnyType.html">DivertBuiltinGrammarToAnyType</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.EntityResolver.html">EntityResolver</a></td><td width="50%"> Set an external SAX entity resolver. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.Fragment.html">Fragment</a></td><td width="50%"> Set to true if the XML input stream is an XML fragment (a non-compliant XML document with multiple root elements). </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.GrammarCache.html">GrammarCache</a></td><td width="50%"> Set the GrammarCache used in transmogrifying XML data to EXI. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.OutputCookie.html">OutputCookie</a></td><td width="50%"> Tells the encoder whether to or not to start the stream by adding an EXI cookie. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.OutputOptions.html">OutputOptions</a></td><td width="50%"> Set the header output options. Choices are set using the <seealso cref="T:Nagasena.Proc.HeaderOptionsOutputType"></seealso> enumeration. Options are <i>all, lessSchemaID</i> (that is, all values except for the SchemaId), or <i>none.</i> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.OutputStream.html">OutputStream</a></td><td width="50%"> Set an output stream to which encoded streams are written. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.PrefixUriBindings.html">PrefixUriBindings</a></td><td width="50%"> @y.exclude </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.PreserveLexicalValues.html">PreserveLexicalValues</a></td><td width="50%"> Set to <i>true</i> to preserve the original string values from the XML stream. For example, a date string might be converted to a different format when interpreted by the Transmogrifier. Preserving the lexical values ensures that the identical strings are restored, and not just their logical values. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.PreserveWhitespaces.html">PreserveWhitespaces</a></td><td width="50%"> Set to true to preserve whitespace (for example, spaces, tabs, and line breaks) in the encoded EXI stream. By default, non-essential whitespace is removed from the encoded stream. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.SAXTransmogrifier.html">SAXTransmogrifier</a></td><td width="50%"> Returns the SAXTransmogrifier, which implements both the ContentHandler and LexicalHandler. SAX programmers can connect the SAXTransmogrifier to their favorite XML Parser to convert SAX events into an EXI stream. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.ValueMaxLength.html">ValueMaxLength</a></td><td width="50%"> Set the maximum length of a string that will be stored for reuse in the String Table. By default, there is no maximum length. However, in data sets that have long, unique strings of information, you can improve performance by limiting the size to the length of strings that are more likely to appear more than once. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.Transmogrifier.ValuePartitionCapacity.html">ValuePartitionCapacity</a></td><td width="50%"> Set the maximum number of values in the String Table. By default, there is no limit. If the target device has limited dynamic memory, limiting the number of entries in the String Table can improve performance and reduce the likelihood that you will exceed memory capacity. </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Nagasena.Sax.Transmogrifier.html">Transmogrifier Class</a> | <a href="Nagasena.Sax.html">Nagasena.Sax Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="Transmogrifier class, properties">
+        </param>
+      </object>
+    </div>
+  </body>
+</html>

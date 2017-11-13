@@ -1,0 +1,65 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>GrammarOptions Class</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">GrammarOptions Class</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> GrammarOptions computes a short integer that represents settings in the EXI Grammar settings that determine how an EXI file will be encoded or decoded. <br /><br /> Values are set using binary switch values (represented as short integers). <br /><br /> If no options have been set, the value is 0 (this is an temporary internal value, rather than a valid setting). <br /><br /> If an XSD is available, and the file to be processed is 100% compatible with the XSD, choosing STRICT_OPTIONS (1) provides the best performance. No other options can be set when files are encoded or decoded in strict mode. <br /><br /> The DEFAULT_OPTIONS setting is 2. The following table lists all of the options and their values. <br /><br />
+            <table align="center" border="1" cellpadding="3" width="640"><tr>
+            <th>Constant</th><th>Value</th>
+            </tr><tr>
+            <td>STRICT_OPTIONS</td><td>1</td>
+            </tr><tr>
+            <td>DEFAULT_OPTIONS</td><td>2</td>
+            </tr><tr><td> ADD_NS</td><td>4 </td></tr><tr><td> ADD_SC</td><td>N/A* </td></tr><tr><td> ADD_DTD</td><td>16 </td></tr><tr><td> ADD_CM</td><td>32 </td></tr><tr><td> ADD_PI</td><td>64 </td></tr>
+            <tr><td colspan="2">*The self-contained option is not supported in this release. </td></tr>
+            </table>
+            <br /><br /> The value of DEFAULT_OPTIONS is 2. When you pass the options variable to an add[??] method, the binary switch value is added to the current value of the options variable. The sum of all additional switches becomes a concise list of the selected options. <br /><br /> For example, if you preserve comments and processing instructions, the total is 98 (2 + 32 + 64). The bitwise options are set correctly, because there is one and only one combination of options that sums up to 98. <br /><br /> If your application uses the same options every time, you can hard code the numeric value as a short integer and use it to create your GrammarCache. For example: <pre> GrammarCache gc = new GrammarCache((EXISchema)null,98); </pre> Be careful to use the correct numeric value, to avoid unexpected results. </p>
+      <p>For a list of all members of this type, see <a href="Nagasena.Proc.Common.GrammarOptionsMembers.html">GrammarOptions Members</a>.</p>
+      <p>
+        <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassTopic.htm">System.Object</a>
+        <br />   <b>Nagasena.Proc.Common.GrammarOptions</b></p>
+      <div class="syntax">
+        <div>public sealed class GrammarOptions</div>
+      </div>
+      <H4 class="dtH4">Thread Safety</H4>
+      <P>Public static (<b>Shared</b> in Visual Basic) members of this type are 
+				safe for multithreaded operations. Instance members are <b>not</b> guaranteed to be 
+				thread-safe.</P>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="Nagasena.Proc.Common.html">Nagasena.Proc.Common</a>
+      </p>
+      <p>
+        <b>Assembly: </b>OpenEXI.Nagasena_doc (in OpenEXI.Nagasena_doc.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Nagasena.Proc.Common.GrammarOptionsMembers.html">GrammarOptions Members</a> | <a href="Nagasena.Proc.Common.html">Nagasena.Proc.Common Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="GrammarOptions class, about GrammarOptions class">
+        </param>
+      </object>
+    </div>
+  </body>
+</html>

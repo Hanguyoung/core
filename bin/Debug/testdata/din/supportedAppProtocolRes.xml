@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:supportedAppProtocolRes xmlns:ns0="urn:iso:15118:2:2010:AppProtocol"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ResponseCode>OK_SuccessfulNegotiationWithMinorDeviation</ResponseCode>
+  <SchemaID>1</SchemaID>
+</ns0:supportedAppProtocolRes>

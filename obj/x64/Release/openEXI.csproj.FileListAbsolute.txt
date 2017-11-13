@@ -1,0 +1,13 @@
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\openEXI.dll.config
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\openEXI.dll
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\openEXI.pdb
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\ICSharpCode.SharpZipLib.dll
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\nunit.framework.dll
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\Sax.dll
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\bin\x64\Release\nunit.framework.xml
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\obj\x64\Release\openEXI.csprojResolveAssemblyReference.cache
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\obj\x64\Release\openEXI.Form1.resources
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\obj\x64\Release\openEXI.Properties.Resources.resources
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\obj\x64\Release\openEXI.csproj.GenerateResource.Cache
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\obj\x64\Release\openEXI.dll
+D:\프로젝트\3. 강팀 시스템\ev_emulator_windows\Projects\openEXI\openEXI\obj\x64\Release\openEXI.pdb

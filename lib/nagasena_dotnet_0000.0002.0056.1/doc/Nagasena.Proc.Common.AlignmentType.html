@@ -1,0 +1,84 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>AlignmentType Enumeration</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">AlignmentType Enumeration</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> AlignmentType represents one of the following bit alignment styles so as to provide an extra degree of control over the way information is stored in EXI format. <br />
+            <ul><li><i>bitPacked</i> is the default setting. Data are stored in the fewest number of bits in sequential streams that cross byte barriers. Conceptually, 8 boolean values might be stored in a single byte, for example.</li><br />
+            <li><i>byteAligned</i> stores data using EXI tags with byte barriers intact. Byte-aligned files are useful for troubleshooting, because the data are often human-readable when the values are literally encoded as strings. It is not meant for data transfer, as the file has not been optimized.</li><br />
+            <li><i>preCompress</i> is a byte-aligned format that arranges the data into channels. It is intended for use cases where file compression is part of the transfer process, so as not to perform the compression step twice.</li><br />
+            <li><i>compress</i> is not a bit alignment in and of itself, but the Deflate algorithm requires that files be byte-aligned. When compression is selected, byte-alignment is used, the data are arranged in channels, and the file is compressed at the end of processing.</li>
+            </ul>
+            </p>
+      <div class="syntax">
+        <div>public enum AlignmentType</div>
+      </div>
+      <h4 class="dtH4">Members</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Member Name</th>
+            <th width="50%">Description</th>
+          </tr>
+<tr valign="top"><td><b>bitPacked</b></td><td> </td></tr>
+<tr valign="top"><td><b>byteAligned</b></td><td> </td></tr>
+<tr valign="top"><td><b>preCompress</b></td><td> </td></tr>
+<tr valign="top"><td><b>compress</b></td><td> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="Nagasena.Proc.Common.html">Nagasena.Proc.Common</a>
+      </p>
+      <p>
+        <b>Assembly: </b>OpenEXI.Nagasena_doc (in OpenEXI.Nagasena_doc.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Nagasena.Proc.Common.html">Nagasena.Proc.Common Namespace</a>
+      </p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="AlignmentType enumeration">
+        </param>
+        <param name="Keyword" value="Nagasena.Proc.Common.AlignmentType enumeration">
+        </param>
+        <param name="Keyword" value="bitPacked enumeration member">
+        </param>
+        <param name="Keyword" value="AlignmentType.bitPacked enumeration member">
+        </param>
+        <param name="Keyword" value="byteAligned enumeration member">
+        </param>
+        <param name="Keyword" value="AlignmentType.byteAligned enumeration member">
+        </param>
+        <param name="Keyword" value="preCompress enumeration member">
+        </param>
+        <param name="Keyword" value="AlignmentType.preCompress enumeration member">
+        </param>
+        <param name="Keyword" value="compress enumeration member">
+        </param>
+        <param name="Keyword" value="AlignmentType.compress enumeration member">
+        </param>
+      </object>
+    </div>
+  </body>
+</html>

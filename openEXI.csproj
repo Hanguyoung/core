@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EAB0979-A133-4A1C-A579-85E9B900841F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>openEXI</RootNamespace>
+    <AssemblyName>openEXI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\sharpziplib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Sax">
+      <HintPath>lib\saxdotnet\Sax.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fixture\Nagasena\LocaleLauncher.cs" />
+    <Compile Include="fixture\Nagasena\Proc\Common\BinaryDataUtil.cs" />
+    <Compile Include="fixture\Nagasena\Proc\Grammars\ApparatusUtil.cs" />
+    <Compile Include="fixture\Nagasena\Schema\EXISchemaUtil.cs" />
+    <Compile Include="fixture\Nagasena\Schema\TestBase.cs" />
+    <Compile Include="fixture\Nagasena\Scomp\Docbook43Schema.cs" />
+    <Compile Include="fixture\Nagasena\Scomp\EXISchemaFactoryTestUtil.cs" />
+    <Compile Include="fixture\Nagasena\Scomp\EXISchemaFactoryTestUtilContext.cs" />
+    <Compile Include="fixture\Org\W3C\Exi\Ttf\Event.cs" />
+    <Compile Include="fixture\Org\W3C\Exi\Ttf\Sax\SAXRecorder.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proc\Common\AlignmentType.cs" />
+    <Compile Include="Proc\Common\BinaryDataSource.cs" />
+    <Compile Include="Proc\Common\Channel.cs" />
+    <Compile Include="Proc\Common\EventCode.cs" />
+    <Compile Include="Proc\Common\EventDescription.cs" />
+    <Compile Include="Proc\Common\EventType.cs" />
+    <Compile Include="Proc\Common\EventTypeList.cs" />
+    <Compile Include="Proc\Common\EXIOptions.cs" />
+    <Compile Include="Proc\Common\EXIOptionsException.cs" />
+    <Compile Include="Proc\Common\GrammarOptions.cs" />
+    <Compile Include="Proc\Common\IBinaryValueScanner.cs" />
+    <Compile Include="Proc\Common\IGrammar.cs" />
+    <Compile Include="Proc\Common\IGrammarCache.cs" />
+    <Compile Include="Proc\Common\QName.cs" />
+    <Compile Include="Proc\Common\SchemaId.cs" />
+    <Compile Include="Proc\Common\StringTable.cs" />
+    <Compile Include="Proc\Common\XmlUriConst.cs" />
+    <Compile Include="Proc\Events\EXIEventComment.cs" />
+    <Compile Include="Proc\Events\EXIEventDTD.cs" />
+    <Compile Include="Proc\Events\EXIEventEntityReference.cs" />
+    <Compile Include="Proc\Events\EXIEventNS.cs" />
+    <Compile Include="Proc\Events\EXIEventProcessingInstruction.cs" />
+    <Compile Include="Proc\Events\EXIEventSchemaNil.cs" />
+    <Compile Include="Proc\Events\EXIEventSchemaType.cs" />
+    <Compile Include="Proc\Events\EXIEventWildcardStartElement.cs" />
+    <Compile Include="Proc\EXIDecoder.cs" />
+    <Compile Include="Proc\EXIOptionsEncoder.cs" />
+    <Compile Include="Proc\EXISchemaResolver.cs" />
+    <Compile Include="Proc\Grammars\Apparatus.cs" />
+    <Compile Include="Proc\Grammars\ArrayEventCodeTuple.cs" />
+    <Compile Include="Proc\Grammars\ArrayEventTypeList.cs" />
+    <Compile Include="Proc\Grammars\BuiltinElementGrammar.cs" />
+    <Compile Include="Proc\Grammars\BuiltinFragmentGrammar.cs" />
+    <Compile Include="Proc\Grammars\BuiltinGrammar.cs" />
+    <Compile Include="Proc\Grammars\DocumentGrammar.cs" />
+    <Compile Include="Proc\Grammars\ElementFragmentGrammar.cs" />
+    <Compile Include="Proc\Grammars\EventCodeTuple.cs" />
+    <Compile Include="Proc\Grammars\EventTypeElement.cs" />
+    <Compile Include="Proc\Grammars\EventTypeFactory.cs" />
+    <Compile Include="Proc\Grammars\EventTypeSchema.cs" />
+    <Compile Include="Proc\Grammars\EXIGrammar.cs" />
+    <Compile Include="Proc\Grammars\EXIGrammarUse.cs" />
+    <Compile Include="Proc\Grammars\FragmentGrammar.cs" />
+    <Compile Include="Proc\Grammars\Grammar.cs" />
+    <Compile Include="Proc\Grammars\GrammarCache.cs" />
+    <Compile Include="Proc\Grammars\GrammarState.cs" />
+    <Compile Include="Proc\Grammars\OptionsGrammarCache.cs" />
+    <Compile Include="Proc\Grammars\ReversedEventTypeList.cs" />
+    <Compile Include="Proc\Grammars\ReverseEventCodeTuple.cs" />
+    <Compile Include="Proc\Grammars\SchemaInformedGrammar.cs" />
+    <Compile Include="Proc\Grammars\ValueApparatus.cs" />
+    <Compile Include="Proc\HeaderOptionsDecoder.cs" />
+    <Compile Include="Proc\HeaderOptionsOutputType.cs" />
+    <Compile Include="Proc\IO\Base64BinaryValueScanner.cs" />
+    <Compile Include="Proc\IO\Base64BinaryValueScriber.cs" />
+    <Compile Include="Proc\IO\BinaryDataSink.cs" />
+    <Compile Include="Proc\IO\BinaryValueScanner.cs" />
+    <Compile Include="Proc\IO\BinaryValueScriber.cs" />
+    <Compile Include="Proc\IO\BitInputStream.cs" />
+    <Compile Include="Proc\IO\BitOutputStream.cs" />
+    <Compile Include="Proc\IO\BitPackedScanner.cs" />
+    <Compile Include="Proc\IO\BitPackedScriber.cs" />
+    <Compile Include="Proc\IO\BodyBitInputStream.cs" />
+    <Compile Include="Proc\IO\BooleanValueScriber.cs" />
+    <Compile Include="Proc\IO\BuiltinRCS.cs" />
+    <Compile Include="Proc\IO\ByteAlignedCommons.cs" />
+    <Compile Include="Proc\IO\ByteAlignedScanner.cs" />
+    <Compile Include="Proc\IO\ByteAlignedScriber.cs" />
+    <Compile Include="Proc\IO\CharacterBuffer.cs" />
+    <Compile Include="Proc\IO\Compression\ChannelFactory.cs" />
+    <Compile Include="Proc\IO\Compression\ChannelKeeper.cs" />
+    <Compile Include="Proc\IO\Compression\ChannellingBinaryValueScriberProxy.cs" />
+    <Compile Include="Proc\IO\Compression\ChannellingScanner.cs" />
+    <Compile Include="Proc\IO\Compression\ChannellingScriber.cs" />
+    <Compile Include="Proc\IO\Compression\ChannellingValueScriberProxy.cs" />
+    <Compile Include="Proc\IO\Compression\EXIDeflaterOutputStream.cs" />
+    <Compile Include="Proc\IO\Compression\EXIEventElement.cs" />
+    <Compile Include="Proc\IO\Compression\EXIEventValueReference.cs" />
+    <Compile Include="Proc\IO\Compression\EXIInflaterInputStream.cs" />
+    <Compile Include="Proc\IO\Compression\ScannerChannel.cs" />
+    <Compile Include="Proc\IO\Compression\ScannerChannelFactory.cs" />
+    <Compile Include="Proc\IO\Compression\ScriberChannel.cs" />
+    <Compile Include="Proc\IO\Compression\ScriberChannelFactory.cs" />
+    <Compile Include="Proc\IO\Compression\ScriberValueHolder.cs" />
+    <Compile Include="Proc\IO\DateTimeValueScannerBase.cs" />
+    <Compile Include="Proc\IO\DateTimeValueScriber.cs" />
+    <Compile Include="Proc\IO\DateTimeValueScriberBase.cs" />
+    <Compile Include="Proc\IO\DateValueScriber.cs" />
+    <Compile Include="Proc\IO\DecimalValueScriber.cs" />
+    <Compile Include="Proc\IO\EnumerationValueScriber.cs" />
+    <Compile Include="Proc\IO\FloatValueScriber.cs" />
+    <Compile Include="Proc\IO\GDayValueScriber.cs" />
+    <Compile Include="Proc\IO\GMonthDayValueScriber.cs" />
+    <Compile Include="Proc\IO\GMonthValueScriber.cs" />
+    <Compile Include="Proc\IO\GYearMonthValueScriber.cs" />
+    <Compile Include="Proc\IO\GYearValueScriber.cs" />
+    <Compile Include="Proc\IO\HeaderOptionsInputStream.cs" />
+    <Compile Include="Proc\IO\HexBinaryValueScanner.cs" />
+    <Compile Include="Proc\IO\HexBinaryValueScriber.cs" />
+    <Compile Include="Proc\IO\IntegerValueScriber.cs" />
+    <Compile Include="Proc\IO\ListValueScriber.cs" />
+    <Compile Include="Proc\IO\OctetBuffer.cs" />
+    <Compile Include="Proc\IO\PrefixUriBindings.cs" />
+    <Compile Include="Proc\IO\Scanner.cs" />
+    <Compile Include="Proc\IO\ScannerFactory.cs" />
+    <Compile Include="Proc\IO\Scribble.cs" />
+    <Compile Include="Proc\IO\Scriber.cs" />
+    <Compile Include="Proc\IO\ScriberFactory.cs" />
+    <Compile Include="Proc\IO\ScriberRuntimeException.cs" />
+    <Compile Include="Proc\IO\ScriberRuntimeExceptionMessages.cs" />
+    <Compile Include="Proc\IO\SimpleScanner.cs" />
+    <Compile Include="Proc\IO\SimpleScriber.cs" />
+    <Compile Include="Proc\IO\StringValueScanner.cs" />
+    <Compile Include="Proc\IO\StringValueScriber.cs" />
+    <Compile Include="Proc\IO\TimeValueScriber.cs" />
+    <Compile Include="Proc\IO\ValueScanner.cs" />
+    <Compile Include="Proc\IO\ValueScannerBase.cs" />
+    <Compile Include="Proc\IO\ValueScannerLexical.cs" />
+    <Compile Include="Proc\IO\ValueScriber.cs" />
+    <Compile Include="Proc\IO\ValueScriberBase.cs" />
+    <Compile Include="Proc\IO\ValueScriberLexical.cs" />
+    <Compile Include="Proc\Util\ExiUriConst.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sax\BinaryDataHandler.cs" />
+    <Compile Include="Sax\EXIReader.cs" />
+    <Compile Include="Sax\ReaderSupport.cs" />
+    <Compile Include="Sax\SaxAdapter.cs" />
+    <Compile Include="Sax\SAXTransmogrifier.cs" />
+    <Compile Include="Sax\Transmogrifier.cs" />
+    <Compile Include="Sax\TransmogrifierException.cs" />
+    <Compile Include="Sax\TransmogrifierExceptionMessages.cs" />
+    <Compile Include="Sax\TransmogrifierRuntimeException.cs" />
+    <Compile Include="Sax\TransmogrifierRuntimeExceptionMessages.cs" />
+    <Compile Include="Sax\XMLifier.cs" />
+    <Compile Include="Schema\Base64.cs" />
+    <Compile Include="Schema\Characters.cs" />
+    <Compile Include="Schema\CommonSchema.cs" />
+    <Compile Include="Schema\EmptySchema.cs" />
+    <Compile Include="Schema\EXISchema.cs" />
+    <Compile Include="Schema\EXISchemaConst.cs" />
+    <Compile Include="Schema\EXISchemaLayout.cs" />
+    <Compile Include="Schema\EXISchemaRuntimeException.cs" />
+    <Compile Include="Schema\EXISchemaRuntimeExceptionMessages.cs" />
+    <Compile Include="Schema\GrammarSchema.cs" />
+    <Compile Include="Schema\HeaderOptionsSchema.cs" />
+    <Compile Include="Schema\HexBin.cs" />
+    <Compile Include="Schema\XSDateTime.cs" />
+    <Compile Include="Scomp\EXISchemaReader.cs" />
+    <Compile Include="Scomp\EXISchemaStruct.cs" />
+    <Compile Include="Scomp\GrammarCache4Grammar.cs" />
+    <Compile Include="Test\Proc\Common\EXIOptionsTest.cs" />
+    <Compile Include="Test\Proc\DecodeStrictTest.cs" />
+    <Compile Include="Test\Proc\Grammars\GrammarCacheTest.cs" />
+    <Compile Include="Test\Proc\Grammars\HeaderOptionsGrammarTest.cs" />
+    <Compile Include="Test\Proc\IO\LocalNamePartitionTest.cs" />
+    <Compile Include="Test\Proc\IO\PrefixPartitionTest.cs" />
+    <Compile Include="Test\Proc\IO\QNameTest.cs" />
+    <Compile Include="Test\Proc\IO\ScriberRuntimeExceptionTest.cs" />
+    <Compile Include="Test\Proc\IO\URIPartitionTest.cs" />
+    <Compile Include="Test\Proc\IO\ValuePartitionTest.cs" />
+    <Compile Include="Test\Proc\XsiTypeTest.cs" />
+    <Compile Include="Test\Sax\Base64BinaryValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\BooleanValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\CompressionTest.cs" />
+    <Compile Include="Test\Sax\CookieTest.cs" />
+    <Compile Include="Test\Sax\DateTimeValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\DecimalValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\DTRMTest.cs" />
+    <Compile Include="Test\Sax\EnumerationTest.cs" />
+    <Compile Include="Test\Sax\EXIReaderTest.cs" />
+    <Compile Include="Test\Sax\FloatValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\FragmentTest.cs" />
+    <Compile Include="Test\Sax\GrammarAttributeWildcardTest.cs" />
+    <Compile Include="Test\Sax\GrammarBuiltinTest.cs" />
+    <Compile Include="Test\Sax\GrammarSchemaInformedTest.cs" />
+    <Compile Include="Test\Sax\GrammarStrictAllTest.cs" />
+    <Compile Include="Test\Sax\GrammarStrictTest.cs" />
+    <Compile Include="Test\Sax\GrammarXsiTypeTest.cs" />
+    <Compile Include="Test\Sax\HexBinaryValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\IntegerValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\IntValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\ISO15118Test.cs" />
+    <Compile Include="Test\Sax\JTLMTest.cs" />
+    <Compile Include="Test\Sax\ListValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\LongEncodingTest.cs" />
+    <Compile Include="Test\Sax\NonWellFormedXmlTest.cs" />
+    <Compile Include="Test\Sax\OpenDaylightTest.cs" />
+    <Compile Include="Test\Sax\OptionsDocumentTest.cs" />
+    <Compile Include="Test\Sax\ProfileDecodeTest.cs" />
+    <Compile Include="Test\Sax\QNameValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\RCSTest.cs" />
+    <Compile Include="Test\Sax\SAXTransmogrifierTest.cs" />
+    <Compile Include="Test\Sax\StringValueEncodingTest.cs" />
+    <Compile Include="Test\Sax\TransmogrifierTest.cs" />
+    <Compile Include="Test\Sax\ValueMaxLengthTest.cs" />
+    <Compile Include="Test\Sax\ValuePartitionCapacityTest.cs" />
+    <Compile Include="Test\Sax\WhitespacesTest.cs" />
+    <Compile Include="Test\Sax\XMLifierTest.cs" />
+    <Compile Include="Test\Schema\EmptySchemaTest.cs" />
+    <Compile Include="Test\Scomp\EXISchemaReaderTest.cs" />
+    <Compile Include="Util\MessageResolver.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\Schema\EmptySchema.xsc" />
+    <EmbeddedResource Include="Resources\Schema\Grammar.xsc" />
+    <EmbeddedResource Include="Resources\Schema\HeaderOptions.xsc" />
+    <EmbeddedResource Include="Resources\Scomp\FixtureGrammars.exi" />
+    <EmbeddedResource Include="Resources\Scomp\FixtureNamesNoNamespace.exi" />
+    <EmbeddedResource Include="Resources\Scomp\FixtureNamesXmlNamespace.exi" />
+    <EmbeddedResource Include="Resources\Scomp\FixtureNamesXsdNamespace.exi" />
+    <EmbeddedResource Include="Resources\Scomp\FixtureNamesXsiNamespace.exi" />
+    <EmbeddedResource Include="Resources\Scomp\FixtureTypes.exi" />
+    <None Include="V2G_CI_MsgDef.exig" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Proc\IO\ScriberRuntimeExceptionXMsg.xml" />
+    <EmbeddedResource Include="Resources\Sax\TransmogrifierExceptionXMsg.xml" />
+    <EmbeddedResource Include="Resources\Sax\TransmogrifierRuntimeExceptionXMsg.xml" />
+    <EmbeddedResource Include="Resources\Schema\EXISchemaRuntimeExceptionXMsg.xml" />
+    <EmbeddedResource Include="Resources\ScriberRuntimeExceptionXMsg.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

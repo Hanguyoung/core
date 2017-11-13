@@ -1,0 +1,53 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>EXIDecoder.setDatatypeRepresentationMap Method</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">EXIDecoder.setDatatypeRepresentationMap Method </h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> Set a datatype representation map (DTRM). The DTRM allows you to remap XMLSchema datatypes to EXI datatypes other than their default equivalents. The map is created using a sequence of Qualified Name pairs that identify a datatype definition in the XMLSchema namespace followed by the new corresponding datatype mapping in the EXI namespace. <br /><br /> For example, the following lines map the boolean datatype from XMLSchema to the integer datatype in EXI. <pre> QName q1 = new QName("xsd:boolean","http://www.w3.org/2001/XMLSchema"); QName q2 = new QName("exi:integer","http://www.w3.org/2009/exi"); QName[] dtrm = new QName[2]; dtrm = {q1, q2}; // Each mapping requires 2 qualified names. decoderInstance.setDatatypeRepresentationMap(dtrm, 1); // The array, and the number of pairs (1). </pre>
+            </p>
+      <div class="syntax">public <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemVoidClassTopic.htm">void</a> setDatatypeRepresentationMap(<br />   <a href="Nagasena.Proc.Common.QName.html">QName[]</a> <i>dtrm</i>,<br />   <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemInt32ClassTopic.htm">int</a> <i>n_bindings</i><br />);</div>
+      <h4 class="dtH4">Parameters</h4>
+      <dl>
+        <dt>
+          <i>dtrm</i>
+        </dt>
+        <dd> a sequence of pairs of datatype QName and datatype representation QName </dd>
+        <dt>
+          <i>n_bindings</i>
+        </dt>
+        <dd> the number of QName pairs </dd>
+      </dl>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Nagasena.Proc.EXIDecoder.html">EXIDecoder Class</a> | <a href="Nagasena.Proc.html">Nagasena.Proc Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="setDatatypeRepresentationMap method">
+        </param>
+        <param name="Keyword" value="setDatatypeRepresentationMap method, EXIDecoder class">
+        </param>
+        <param name="Keyword" value="EXIDecoder.setDatatypeRepresentationMap method">
+        </param>
+      </object>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>EXIReader Properties</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">EXIReader Properties</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The properties of the <b>EXIReader</b> class are listed below. For a complete list of <b>EXIReader</b> class members, see the <a href="Nagasena.Sax.EXIReaderMembers.html">EXIReader Members</a> topic.</p>
+      <h4 class="dtH4">Public Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.AlignmentType.html">AlignmentType</a></td><td width="50%"> Set the bit alignment style used to compile the EXI input stream. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.BlockSize.html">BlockSize</a></td><td width="50%"> Set the size, in number of values, of the information that will be processed as a chunk of the entire EXI stream. Reducing the block size can improve performance for devices with limited dynamic memory. Default is 1,000,000 items (not 1MB, but 1,000,000 complete Attribute and Element values). Block size is only used when the EXI stream is encoded with EXI-compression. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.ReaderSupport.ContentHandler.html">ContentHandler</a> (inherited from <b>ReaderSupport</b>)</td><td width="50%"> Set a SAX content handler to receive SAX events. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.EXISchemaResolver.html">EXISchemaResolver</a></td><td width="50%"> Set the EXISchemaResolver to retrieve the schema needed to decode the current EXI stream. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.Fragment.html">Fragment</a></td><td width="50%"> Set to true if the EXI input stream is an XML fragment (a non-compliant XML document with multiple root elements). </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.ReaderSupport.GrammarCache.html">GrammarCache</a> (inherited from <b>ReaderSupport</b>)</td><td width="50%"> Set the GrammarCache used in parsing EXI streams. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.ReaderSupport.Length.html">Length</a> (inherited from <b>ReaderSupport</b>)</td><td width="50%"> @y.exclude </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.LexicalHandler.html">LexicalHandler</a></td><td width="50%"> Set a SAX lexical handler to receive SAX lexical events. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.PreserveLexicalValues.html">PreserveLexicalValues</a></td><td width="50%"> Set to true if the EXI input stream was compiled with the Preserve Lexical Values set to true. The original strings, rather than logical XML equivalents, are restored in the XML output stream. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.ValueMaxLength.html">ValueMaxLength</a></td><td width="50%"> Set the maximum length of a string that will be stored for reuse in the String Table. By default, there is no maximum length. However, in data sets that have long, unique strings of information, you can improve performance by limiting the size to the length of strings that are more likely to appear more than once. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Nagasena.Sax.EXIReader.ValuePartitionCapacity.html">ValuePartitionCapacity</a></td><td width="50%"> Set the maximum number of values in the String Table. By default, there is no limit. If the target device has limited dynamic memory, limiting the number of entries in the String Table can improve performance and reduce the likelihood that you will exceed memory capacity. </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Nagasena.Sax.EXIReader.html">EXIReader Class</a> | <a href="Nagasena.Sax.html">Nagasena.Sax Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="EXIReader class, properties">
+        </param>
+      </object>
+    </div>
+  </body>
+</html>
