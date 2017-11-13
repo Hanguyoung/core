@@ -1,0 +1,14 @@
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\HelloCore.deps.json
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\HelloCore.runtimeconfig.json
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\HelloCore.runtimeconfig.dev.json
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\HelloCore.dll
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\HelloCore.pdb
+C:\Users\han\source\repos\HelloCore\HelloCore\obj\Debug\netcoreapp2.0\HelloCore.csproj.CoreCompileInputs.cache
+C:\Users\han\source\repos\HelloCore\HelloCore\obj\Debug\netcoreapp2.0\HelloCore.AssemblyInfoInputs.cache
+C:\Users\han\source\repos\HelloCore\HelloCore\obj\Debug\netcoreapp2.0\HelloCore.AssemblyInfo.cs
+C:\Users\han\source\repos\HelloCore\HelloCore\obj\Debug\netcoreapp2.0\HelloCore.dll
+C:\Users\han\source\repos\HelloCore\HelloCore\obj\Debug\netcoreapp2.0\HelloCore.pdb
+C:\Users\han\source\repos\HelloCore\HelloCore\obj\Debug\netcoreapp2.0\HelloCore.csprojResolveAssemblyReference.cache
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\openEXI.dll
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\openEXI.pdb
+C:\Users\han\source\repos\HelloCore\HelloCore\bin\Debug\netcoreapp2.0\openEXI.dll.config

@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\Projects\openEXI\openEXI\openEXI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GW15118EV">
+      <HintPath>GW15118EV.dll</HintPath>
+    </Reference>
+    <Reference Include="GW70121">
+      <HintPath>GW70121.dll</HintPath>
+    </Reference>
+    <Reference Include="GW70121EV">
+      <HintPath>GW70121EV.dll</HintPath>
+    </Reference>
+    <Reference Include="GWCommon">
+      <HintPath>GWCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GWEV15118">
+      <HintPath>GWEV15118.dll</HintPath>
+    </Reference>
+    <Reference Include="GW_CHAdeMO">
+      <HintPath>GW_CHAdeMO.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlGenerator">
+      <HintPath>HtmlGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ModeBusTCP">
+      <HintPath>ModeBusTCP.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="openEXI">
+      <HintPath>openEXI.dll</HintPath>
+    </Reference>
+    <Reference Include="Sax">
+      <HintPath>Sax.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.CodeFirst">
+      <HintPath>SQLite.CodeFirst.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
